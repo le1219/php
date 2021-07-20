@@ -60,6 +60,58 @@
 
     ?>
 
+    <?php
+    //str_replace(),str_pad(),str_repeat()
+    $str06 = '正規表達式';
+    echo str_replace('達', '了', $str06) . '<br>';
+    echo str_pad('不要', 30, '阿') . '<br>';
+    echo 'y' . str_repeat('e', 5);
+    ?>
+    <hr>
+    <?php
+    //strtolower(),strtoupper
+    $str07_1 = 'HELLO';
+    $str07_2 = 'world';
+    echo strtolower($str07_1) . strtoupper($str07_2);
+    ?>
+
+    <hr>
+    <?php
+    //md5()
+    $strOrigin = 'T2st@localhost';
+    echo '原始資料：' . $strOrigin . '<br>';
+    echo 'md5()加密後：' . md5($strOrigin) . '<br>';
+
+    $strOrigin = 'Test@localhost';
+    echo '修改資料後：' . $strOrigin . '<br>';
+    echo 'md5()加密後：' . md5($strOrigin) . '<br>';
+
+    $strOrigin = 'T2st@localhost';
+    echo '原始資料：' . $strOrigin . '<br>';
+    echo 'md5()加密後：' . md5($strOrigin) . '<br>';
+    ?>
+
+    <hr>
+    <?php
+    //sha1()
+    $strOrigin = 'T2st@localhost';
+    echo '原始資料：' . $strOrigin . '<br>';
+    echo 'sha1()加密後：' . sha1($strOrigin) . '<br>';
+
+    $strOrigin = 'Test@localhost';
+    echo '修改資料後：' . $strOrigin . '<br>';
+    echo 'sha1()加密後：' . sha1($strOrigin) . '<br>';
+
+    $strOrigin = 'T2st@localhost';
+    echo '原始資料：' . $strOrigin . '<br>';
+    echo 'sha1()加密後：' . sha1($strOrigin) . '<br>';
+    ?>
+
+    <hr>
+    <?php
+    //銷毀，釋放變數
+    unset($str01, $str02, $str03, $str04_1, $str04_2, $arr03);
+    ?>
 
 </body>
 
